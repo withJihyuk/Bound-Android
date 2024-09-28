@@ -22,7 +22,7 @@ dependencyResolutionManagement {
 
 
 
-rootProject.name = "practice"
+rootProject.name = "Bound-Android"
 include(":app")
 include(":domain")
 include(":data")
