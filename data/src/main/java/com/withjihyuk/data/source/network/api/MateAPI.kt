@@ -1,9 +1,24 @@
-package com.withjihyuk.data.source.network.api
+package com.withjihyuk.data.source.network.api;
 
-import com.squareup.moshi.Json
-import com.squareup.moshi.JsonClass
+import com.withjihyuk.data.source.network.dto.GoogleLoginRequestBody
+import com.withjihyuk.data.source.network.dto.TermsRequestBody
 
-@JsonClass(generateAdapter = true)
-data class MateAPI(
-    @Json(name = "example") val example: String
-)
+import retrofit2.http.Body
+import retrofit2.http.DELETE
+import retrofit2.http.GET
+import retrofit2.http.POST
+
+interface MateAPI {
+    @POST("/mate/code")
+    suspend fun createMateCode(
+//        @Body body: CreateMateCodeRequestBody
+    )
+
+    @POST("/mate/code/opponent")
+    suspend fun linkMateCode(
+//        @Body body: LinkMateCodeRequestBody
+    )
+
+//    @GET("/mate")
+//    suspend fun getMyMateInfo(): GetMyMateInfoResponseBody
+}
