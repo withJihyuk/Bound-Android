@@ -18,4 +18,5 @@ object Versions {
     const val MOSHI_CONVERTER = "2.9.0"
 
     const val MATERIAL3 = "1.3.0"
+    const val NAVIGATION = "2.8.0"
 }

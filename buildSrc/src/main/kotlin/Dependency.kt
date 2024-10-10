@@ -33,7 +33,10 @@ object Dependency {
     }
 
     object Material3 {
-        const val MATERIAL3 = "implementation \"androidx.compose.material3:material3:${Versions.MATERIAL3}"
+        const val MATERIAL3 = "androidx.compose.material3:material3:${Versions.MATERIAL3}"
     }
 
+    object Compose {
+        const val NAVIGATION = "androidx.navigation:navigation-compose:${Versions.NAVIGATION}"
+    }
 }
