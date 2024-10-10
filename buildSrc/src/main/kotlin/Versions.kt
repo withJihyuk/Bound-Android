@@ -10,11 +10,12 @@ object Versions {
 
     const val GOOGLE_SERVICE_PLUGIN = "4.3.15"
 
-    const val PREFERENCES = "1.0.0"
+    const val PREFERENCES = "1.1.1"
 
     const val SWIPE_REFRESH = "0.27.0"
 
     const val MOSHI = "1.15.0"
     const val MOSHI_CONVERTER = "2.9.0"
 
+    const val MATERIAL3 = "1.3.0"
 }

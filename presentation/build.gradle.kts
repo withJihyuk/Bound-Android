@@ -34,6 +34,7 @@ android {
 
 dependencies {
     implementation(Dependency.Coil.COIL)
+    implementation(Dependency.Material3.MATERIAL3)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

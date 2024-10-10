@@ -32,4 +32,8 @@ object Dependency {
         const val MOSHI_CODEGEN = "com.squareup.moshi:moshi-kotlin-codegen:${Versions.MOSHI}"
     }
 
+    object Material3 {
+        const val MATERIAL3 = "implementation \"androidx.compose.material3:material3:${Versions.MATERIAL3}"
+    }
+
 }
