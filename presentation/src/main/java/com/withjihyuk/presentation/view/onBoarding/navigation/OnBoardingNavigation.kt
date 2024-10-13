@@ -9,7 +9,7 @@ import com.withjihyuk.presentation.view.onBoarding.screen.TermsPage
 import com.withjihyuk.presentation.view.onBoarding.screen.TypeCodePage
 
 fun NavGraphBuilder.onBoarding(navController: NavController) {
-    navigation(startDestination = "startLoginPage", route = "onBoarding") {
+    navigation(startDestination = "typeCodePage", route = "onBoarding") {
         composable("startLoginPage") { StartLoginPage(navController, "엄준식") }
         composable("typeCodePage") { TypeCodePage(navController) }
         composable("termsPage") { TermsPage(navController) }
