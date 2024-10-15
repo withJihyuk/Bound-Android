@@ -10,10 +10,9 @@ import com.withjihyuk.presentation.R
 
 val Typography = Typography(
     titleLarge = TextStyle(
-        fontSize = 24.sp,
-        lineHeight = 31.2.sp,
-        fontFamily = FontFamily(Font(R.font.pretendard)),
-        fontWeight = FontWeight(600),
+        fontSize = 32.sp,
+        lineHeight = 41.6.sp,
+        fontFamily = FontFamily(Font(R.font.pretendard, weight = FontWeight.W900)),
     ),
     labelLarge = TextStyle(
         fontSize = 16.sp,
