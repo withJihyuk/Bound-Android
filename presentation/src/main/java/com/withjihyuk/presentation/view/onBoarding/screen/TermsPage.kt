@@ -77,7 +77,7 @@ fun TermsPage() {
             Column(Modifier.padding(top = 100.dp)) {
                 BoundButton(
                     modifier = Modifier,
-                    text = "Google 계정으로 로그인",
+                    text = "마무리하기",
                     onClickAction = { }
                 )
             }
