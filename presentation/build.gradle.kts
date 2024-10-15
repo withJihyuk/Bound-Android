@@ -42,7 +42,9 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(Dependency.Compose.NAVIGATION)
+    implementation(libs.androidx.ui.tooling.preview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    debugImplementation(libs.ui.tooling)
 }

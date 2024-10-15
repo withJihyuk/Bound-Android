@@ -24,6 +24,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.withjihyuk.presentation.R
+import com.withjihyuk.presentation.view.component.BoundButton
 import com.withjihyuk.presentation.view.component.BoundEmojiCardComponent
 
 
@@ -39,7 +40,11 @@ fun StartLoginPage(
             .windowInsetsPadding(WindowInsets.statusBars),
         color = Color(0xFF2A2A2A)
     ) {
-        Column(Modifier.padding(top = 34.dp, start = 20.dp)) {
+        Column(
+            Modifier
+                .padding(top = 34.dp)
+                .padding(horizontal = 20.dp)
+        ) {
             Icon(
                 painter = painterResource(R.drawable.arrow),
                 contentDescription = "화살표",
@@ -57,13 +62,19 @@ fun StartLoginPage(
             )
             Row(
                 Modifier
-                    .padding(top = 26.dp)
+                    .padding(top = 32.dp)
                     .horizontalScroll(scrollState),
                 horizontalArrangement = Arrangement.spacedBy(12.dp)
 
             ) {
                 BoundEmojiCardComponent(subject = "오늘 내 하트는?", centerEmoji = "👀")
-                BoundEmojiCardComponent(subject = "지금 내 기분은?", centerEmoji = "🐹")
+            }
+            Column(Modifier.padding(top = 300.dp)) {
+                BoundButton(
+                    modifier = Modifier,
+                    text = "Google 계정으로 로그인",
+                    onClickAction = { }
+                )
             }
         }
     }
