@@ -7,13 +7,13 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.MaterialTheme.typography
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -43,13 +43,8 @@ fun BoundEmojiCardComponent(subject: String, centerEmoji: String) {
         Text(
             modifier = Modifier.align(Alignment.BottomStart),
             text = subject,
-            style = TextStyle(
-                fontSize = 24.sp,
-                lineHeight = 20.sp,
-                fontWeight = FontWeight(700),
-                color = Color(0xFFFFFFFF),
-                letterSpacing = 0.25.sp,
-            )
+            color = Color.White,
+            style = typography.titleLarge
         )
     }
 }
