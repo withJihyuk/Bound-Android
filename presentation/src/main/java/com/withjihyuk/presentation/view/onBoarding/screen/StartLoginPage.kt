@@ -20,9 +20,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavController
 import com.withjihyuk.presentation.R
 import com.withjihyuk.presentation.view.component.BoundButton
 import com.withjihyuk.presentation.view.component.BoundEmojiCardComponent
@@ -31,7 +31,6 @@ import com.withjihyuk.presentation.view.component.BoundEmojiCardComponent
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
 fun StartLoginPage(
-    navController: NavController,
 ) {
     val scrollState = rememberScrollState()
     Surface(
@@ -73,9 +72,15 @@ fun StartLoginPage(
                 BoundButton(
                     modifier = Modifier,
                     text = "Google 계정으로 로그인",
-                    onClickAction = { }
+                    onClickAction = {}
                 )
             }
         }
     }
+}
+
+@Composable
+@Preview
+fun StartLoginPagePreview() {
+    StartLoginPage()
 }

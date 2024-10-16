@@ -10,8 +10,8 @@ import com.withjihyuk.presentation.view.onBoarding.screen.TypeCodePage
 
 fun NavGraphBuilder.onBoarding(navController: NavController) {
     navigation(startDestination = "termsPage", route = "onBoarding") {
-        composable("startLoginPage") { StartLoginPage(navController) }
-        composable("typeCodePage") { TypeCodePage(navController) }
+        composable("startLoginPage") { StartLoginPage() }
+        composable("typeCodePage") { TypeCodePage() }
         composable("termsPage") { TermsPage() }
     }
 }

@@ -78,7 +78,7 @@ fun TermsPage() {
                 BoundButton(
                     modifier = Modifier,
                     text = "마무리하기",
-                    onClickAction = { }
+                    onClickAction = {}
                 )
             }
         }
